@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulos no JavaScript</title>
+</head>
+<body>
+
+    <h1>Modulos no JavaScript</h1>
+
+    <p>São arquivos quLOe a gente pode exportar e importar em pontos especificos do nosso Js que precisamos usar</p>
+    <h2>Como criar e exportar modulos no JavaScript</h2>
+
+    <div class="importante">
+        <p>export function somar = (numero1, numero2){
+            return numero1 + numero2
+        }</p>
+    
+        <p>import { somar } from "./operacoes-matematicas"; </p>
+    </div>
+
+    <div class="box">
+        <p>para esportar multiplas funções temos que colocar o expor no final do arquivo e as funções dentro de chaves separadas por virgula</p>
+
+        <p>export {somar, multiplicar}</p>
+    </div>
+
+    <div id="resultado"></div>
+
+    <script type="module" src="./index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+}
+
+p {
+    margin: 10px;
+    font-weight: 550;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 600px;
+}
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 10px;
+    background-color: #ccc;
+    max-width: 600px;
+}
+
+.secao h2 {
+    text-align: center;
+    border-bottom: 3px solid ;
+    margin-bottom: 20px;
+}
+
+.secao h3 {
+
+}
+
+.secao .subtitulo {
+    border: 2px solid #fff;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.secao span {
+    background-color: #fff;
+    padding: 7px 3px;
+    border-radius: 10px;
+}
+
+.secao .obs {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;    
+    color: blue;
+    margin-top: 60px;
+}

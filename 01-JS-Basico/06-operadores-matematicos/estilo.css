@@ -1,0 +1,60 @@
+body {
+    background-color: #ccc;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+.conteudo-geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-geral .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.conteudo-geral .item {
+    margin: 5px;
+}
+
+
+.conteudo-geral h2,h3,.explicacao {
+    text-align: center;
+}
+
+.conteudo-geral .explicacao {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.conteudo-geral .exemplo {
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.conteudo-geral .exemplo .js {
+    background-color: #fff;
+    padding: 5px;
+}
+
+
+
+.conteudo-geral .exemplo .js .resultado {
+    color: green;
+    background-color: #fff;
+    padding: 7px;
+    border-top: 2px solid green;
+}

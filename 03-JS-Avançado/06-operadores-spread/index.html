@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Spread</title>
+    <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <h1>Operadores Spread</h1>    
+
+    <p>O operador Spread a gente consegue expandir os elementos de um objeto iteravel</p>
+    <p>Um objeto iteravel é uma array ou uma string</p>
+    <p>São objetos que podem ser percorridos</p>
+
+
+
+
+    <script>
+        const pessoas =["Samio", "Roberto", "Ricardo"]
+        console.log(...pessoas);
+
+        /*CONCATENAR DOIS ARRAYS*/
+
+        // let pessoas1 = ["Samio", "Roberto", "Ricardo"]
+        // let pessoas2 = ["Pedro", "Paulo", "João"]
+
+        // // pessoas1 = pessoas1.concat(pessoas1)
+
+        // pessoas1 = [...pessoas1, ...pessoas2]
+        // console.log(pessoas1);
+
+        const pessoa1 = {nome: "Samio", idade: 34}
+        const pessoa2 = {nome: "Oimas", idade: 30}
+
+        const objetoClonado = {...pessoa1}
+        console.log(objetoClonado);
+
+    </script>
+</body>
+</html>

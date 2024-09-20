@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pqt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1,
+        h3 {
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .campo-preenchido {
+            border: 2px solid green;
+        }
+
+        .explicacao {
+            font-size: 20px;
+            text-align: justify;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 500px;
+            height: auto;
+            padding: 20px;
+            letter-spacing: 1px;
+        }
+
+        .dica {
+            font-size: 16px;
+            text-align: center;
+            width: 250px;
+            height: auto;
+            font-weight: bold;
+            background-color: #232323;
+            color: #fff;
+            padding: 10px;
+            word-spacing: 1px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>4 - Validando o preenchimento das informações de um input</h1>
+
+    <h3>aperte F12 - console do navegador</h3>
+
+    <div class="flex">
+        <input type="text" class="input">
+        <input type="text" class="input">
+    </div>
+
+    <div class="flex">
+        <div class="explicacao">
+            <p>
+                <strong>Descrição da tarefa: </strong>Nessa tarefa, você deve criar um ou mais inputs na tela. Ao
+                digitar qualquer texto em um desses inputs, a sua borda deverá ficar com a cor verde. Caso o input
+                estiver vazio, a cor da borda deverá voltar ao normal.
+            </p>
+        </div>
+
+        <div class="dica">
+            <p>
+                Dica: É essencial começar pensando no objetivo do que precisa ser feito e no passo a passo pra chegar
+                lá.
+                <br>
+                <br>
+                Evite utilizar o style do JavaScript para esses exercícios
+                <br>
+                <br>
+                NÃO SAIA TENTANDO ESCREVER CÓDIGO NO JS! Antes disso você precisa saber O QUE precisa ser feito e só
+                depois COMO fazer.
+            </p>
+        </div>
+
+        <div class="flex">
+            <div class="explicacao">
+                <p>
+                    <strong> Passo 1</strong> - Pegar todos os inputs que tenham a mesma classe. <br>
+                    <br>
+                    <strong> Passo 2</strong> - Dar um jeito de percorrer cada input.
+                    <br>
+                    <br>
+
+                    <strong>Passo 3</strong> - Quando o usuário preencher algo, precisamos disparar a ação para
+                    verificar se o input foi
+                    alterado.
+                    <br>
+                    <br>
+
+                    <strong>Passo 4</strong> - Realizar a verificação se o valor do input é diferente de vazio.
+                    <br>
+                    <br>
+
+                    <strong>Passo 5</strong> - Se o input tiver alguma informação, adicionamos a classe de
+                    campo-preenchido que vai dar a
+                    borda verde ao input.
+                    <br>
+                    <br>
+
+                    <strong>Passo 6</strong> - Se o input estiver vazio, removemos a classe campo-preenchido.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./estilo.js"></script>
+</body>
+
+</html>

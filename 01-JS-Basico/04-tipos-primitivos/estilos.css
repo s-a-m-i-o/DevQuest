@@ -1,0 +1,61 @@
+body {
+    background-color:#ccc ;
+   
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin: 5px;
+}
+
+.header .titulo {
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.conteudo-geral {
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+}
+
+.conteudo-geral .explicacao-geral {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 15px 5px 15px #ccc;
+    margin: 3px;
+    padding: 10px;
+}
+
+.conteudo-geral .explicacao-geral ul li {
+    margin: 15px;
+    padding: 3px;
+}
+
+.conteudo-geral .subtitulo-2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.conteudo-geral .exemplo {
+    border: 2px solid black;
+    box-shadow: 5px 0px 15px ;
+    margin: 5px;
+    padding: 15px;
+}
+
+.conteudo-geral .js {
+    background-color: #929292;
+}

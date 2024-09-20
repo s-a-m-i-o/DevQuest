@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval e SetTimeout</title>
+    <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SetInterval e SetTimeout</h1>
+    <p>
+        <p>
+            setTimeout(function, milliseconds): Executa uma função, depois de aguardar um número especificado de milissegundos.
+        </p>
+        <p>
+            setInterval(function, milliseconds): O mesmo que setTimeout(), mas repete a execução da função continuamente.
+        </p>
+    </p>
+
+    <script>
+        // setTimeout(() => {
+        //     alert("Olá Mundo!!!")
+        // }, 3000);
+
+        // setInterval(() => {
+        //     console.log("Console dentro do timeOut");;
+        // }, 4000);
+
+        // console.log("Console fora do timeOut");;
+
+        let idDoIntervalo = setInterval(() => {
+            console.log("Console dentro do timeOut");;
+        }, 2000);
+
+        console.log(idDoIntervalo);
+    </script>
+</body>
+</html>

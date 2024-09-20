@@ -1,0 +1,50 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+span{
+    font-weight: bold;
+    font-size: 28px;
+    color: green;
+}
+
+h2 {
+    filter: drop-shadow(2px 2px 5px green);
+    letter-spacing: 2px;
+}
+
+.flex .itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+i {
+    font-size:100px;
+}
+
+.flex .itens .lado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex .itens .esquerda {
+    transform: rotate(180deg);
+}
+
+.api-famosas {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 40px 4%;
+}

@@ -1,0 +1,81 @@
+body {
+    background-color: #ccc;
+}
+
+.header {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+.conteudo-geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 5px;
+    padding: 10px;    
+}
+
+.conteudo-geral .conteudo-explicado{
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.conteudo-geral .conteudo-explicado p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.conteudo-geral .conteudo {
+    border: 3px solid black;
+    padding: 15px;
+}
+
+.conteudo-geral .conteudo h2, h3 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.conteudo-geral .conteudo .js {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.conteudo-geral .conteudo .js img {
+    width: 400px;
+    border: 5px solid #ebe8e8;
+}
+
+.conteudo-geral .conteudo .js .escrito {
+    color: red;
+    font-weight: bold;
+}
+
+.conteudo-geral .conteudo .azul {
+    color: blue;
+    font-weight: bold;
+}
+
+.voltar {
+    display: inline;
+}
+
+.voltar button {
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.voltar .btn {
+    font-weight: bold;
+    font-variant: small-caps;
+}

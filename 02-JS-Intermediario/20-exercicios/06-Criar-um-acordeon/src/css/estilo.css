@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 655px;
+    border-radius: 21px;
+    box-shadow: 0px 20px 20px -10px #00000040;
+    background: #FCFCFC;
+    position: relative;
+    
+}
+
+.card .conteudo {
+    width: 90%;
+    padding-left: 225px;
+}
+
+.card .imagem {
+    position: absolute;
+    left: -90px;
+}
+
+.card .conteudo h1 {
+font-size: 25px;
+font-weight: 700;
+margin-bottom: 14px;
+}
+
+.card .conteudo .itens .item {
+    cursor: pointer;
+    background-image:url('../img/seta-fechada.png');
+    background-repeat: no-repeat;
+    background-position: top 10px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.card .conteudo h2 {
+font-size: 17px;
+font-weight: 600;
+line-height: 19.92px;
+text-align: left;
+margin-bottom: 10px;
+
+}
+
+.card .conteudo p {
+font-size: 15px;
+font-weight: 200;
+line-height:18px;
+
+}
+
+.card .conteudo li {
+    padding: 10px 0;
+}
+
+.card .itens .item:last-child {
+    border-bottom: none;
+}
+
+.card .itens .item .pergunta {
+    padding-bottom: 15px;
+    transition: 0.2s ease;
+    font-size: 17px;
+    width: 90%;
+    font-weight: 500;
+}
+
+.card .itens .item .pergunta:hover {
+    color: #f47c57;
+}
+
+.card .itens .item .resposta {
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card .itens .item.ativo h2 {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.card .itens .item.ativo .resposta {
+    display: block;
+}
+
+.card .itens .item.ativo {
+    background-image: url(../img/seta-aberta.png);
+}

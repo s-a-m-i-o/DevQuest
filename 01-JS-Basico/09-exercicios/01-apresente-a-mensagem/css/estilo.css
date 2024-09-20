@@ -1,0 +1,93 @@
+header {
+    margin: 10px 0px 20px;
+}
+header h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+main {
+    background-color: #ccc;
+    width: 100%;
+    height: 92vh;
+}
+
+.conteudo-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-geral .fundo {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-geral .fundo .item {
+    border: 1px solid #4d4c4c;
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    border-radius: 20px;
+    width: 550px;
+    height: 210px;
+    margin: 10px;
+}
+
+.conteudo-geral .fundo .mensagem {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    
+}
+
+.conteudo-geral .fundo .mensagem .titulo,.subtitulo {    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.conteudo-geral .fundo .mensagem .titulo {
+    margin-bottom: 10px;
+    font-size: 18px;
+    
+}
+
+.conteudo-geral .fundo .mensagem .caixa-dialogo {
+    border: 2px solid #8cb9df;
+    border-radius: 10px;
+    height: 40px;
+    margin: 5px 0px;
+    margin-bottom: 25px;
+}
+
+.conteudo-geral .fundo .mensagem .botoes {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.conteudo-geral .fundo .mensagem a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-geral .fundo .mensagem a {
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgb(67, 67, 201);
+    border-radius: 50px;
+    color: #8cb9df;
+    margin-left: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.conteudo-geral .fundo .mensagem a:hover {
+    background-color: rgb(163, 200, 230);
+    color: black;
+}
+
+.conteudo-geral .fundo .mensagem .btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}

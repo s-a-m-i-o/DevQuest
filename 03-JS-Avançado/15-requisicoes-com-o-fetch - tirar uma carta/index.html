@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #232323;
+            color: #fff;
+            text-align: center;
+        }
+
+        button {
+            margin: 20px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 30px;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 1px 1px 7px yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fetch</h1>
+
+    <img id="carta" src="" alt="">
+
+    <button id="tirar-carta">Tirar Uma Carta</button>
+
+    <script>
+        document.getElementById("tirar-carta").addEventListener("click", ()=>{
+            tirarUmaCartaAleatoriaDoBaralho()
+        })
+
+        async function criarBaralhoEmbaralhado (){
+            const url ="https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
+            const resposta = await fetch(url)
+            return await resposta.json()
+        }        
+
+        async function tirarUmaCarta (deck_id){
+            const url = `https://deckofcardsapi.com/api/deck/${deck_id}/draw/?count=1`
+            const resposta = await fetch(url)
+            return await resposta.json()
+        }
+
+        async function tirarUmaCartaAleatoriaDoBaralho(){
+            const baralho = await criarBaralhoEmbaralhado()
+            const carta = await tirarUmaCarta(baralho.deck_id)
+            const imagemCarta = carta.cards[0].image
+            document.getElementById("carta").src = imagemCarta
+        }
+
+        tirarUmaCartaAleatoriaDoBaralho()
+        console.log("Segue o fluxo");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

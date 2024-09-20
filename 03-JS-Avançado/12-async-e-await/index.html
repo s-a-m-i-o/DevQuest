@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async e Await</title>
+    <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Async e Await</h1>
+    <p>Quando uma função assíncrona é chamada, ela retorna uma Promise. Quando a função assíncrona retorna um valor, a
+        Promise será resolvida com o valor retornado. Quando a função assíncrona lança uma exceção ou algum valor, a
+        Promise será rejeitada com o valor lançado.
+
+        Uma função assíncrona pode conter uma expressão await, que pausa a execução da função assíncrona e espera pela
+        resolução da Promise passada, e depois retoma a execução da função assíncrona e retorna o valor resolvido</p>
+
+        <script>
+
+            let ferverAgua = (chaleiraEstaNoFogo, fogoEstaLigado) => {
+                return new Promise ((resolve, reject) => {
+                    if (chaleiraEstaNoFogo && fogoEstaLigado) {
+                        console.log("Passo 1 finalizado, Água fervida.")
+                        resolve()
+                    }else {
+                        console.log("É necessário colocat a chaleira com água e ligar o fogão senão teu café não vai ficar pronto nunca")
+                        reject()
+                    }
+                })
+            }
+
+            let passarCafe = (aguaFervida) => {
+                return new Promise((resolve) => {
+                    console.log("Passo 2 finalizado, Café foi passado")
+                    resolve(true)
+                })
+            }
+
+            let tomarCafe = (cafePassado) => {
+                return new Promise((resolve) => {
+                    console.log("Passo 3 finalizado, terminei de tomar o café")
+                    resolve(true)
+                })
+            }
+
+            let lavarXicara =(cafeTomado) => {
+                return new Promise((resolve) => {
+                    console.log("Passo 4 finalizado, Lavar a xicara")
+                    resolve(true)
+                })
+            }
+
+            let chaleiraEstaNoFogao = true
+            let fogaoEstaLigado = true
+
+            // ferverAgua(chaleiraEstaNoFogao, fogaoEstaLigado)
+            //     .then(() => {
+            //         return passarCafe();
+            //     })
+            //     .then(() => {
+            //         return tomarCafe();
+            //     })
+            //     .then(() => {
+            //         return lavarXicara();
+            //     })
+            //     .then(() => {
+            //         console.log("finalizado ritual do café, bora trabalhar");
+            //     })
+
+            async function iniciarProcessoDeFazerCafe() {
+                const aguaFervida = await ferverAgua(chaleiraEstaNoFogao, fogaoEstaLigado)
+                const cafePassado = await passarCafe(aguaFervida)
+                const cafeTomado = await tomarCafe(cafePassado)
+                const xicaraLavada = await lavarXicara(cafeTomado)
+                if(xicaraLavada) console.log("finalizado ritual do café, bora trabalhar");
+            }
+
+            iniciarProcessoDeFazerCafe()
+        </script>
+</body>
+
+</html>

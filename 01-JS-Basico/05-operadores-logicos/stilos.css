@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ccc;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+main .conteudo-geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+main .conteudo-geral .mesmo-tema {
+    display: flex;
+    margin: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+main .conteudo-geral .mesmo-tema .explicacao {
+    border: 2px solid #000;
+    margin: 5px;
+    padding: 10px;
+}
+
+main .conteudo-geral .mesmo-tema .explicacao .subtitulo {
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 5px;
+    
+}
+
+main .conteudo-geral .mesmo-tema .explicacao .subtitulo-tres {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+main .conteudo-geral .mesmo-tema .explicacao .exemplo {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #adacac;
+    padding: 1px 3px;
+}
+
+main .conteudo-geral .mesmo-tema .explicacao .js {
+    background-color: #fff;
+    padding: 10px;
+}
+
+main .conteudo-geral .mesmo-tema .explicacao .js .resposta{
+    color: green;
+    border-top: 1px solid green;
+    margin-top: 3px;
+}
+

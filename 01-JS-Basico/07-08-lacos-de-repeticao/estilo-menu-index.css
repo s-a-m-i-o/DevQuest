@@ -1,0 +1,17 @@
+.menu {
+    background-color: aqua;
+    width: 500px;
+}
+
+.menu .navegacao ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:450px) {
+    .menu {
+
+        width: 80%;
+    }
+}
+

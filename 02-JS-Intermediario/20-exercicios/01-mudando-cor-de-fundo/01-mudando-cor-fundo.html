@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudanco cor de fundo com JS</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .box .quadrados {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box .quadrados .item {
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+        }
+
+        .box .quadrados .azul{ background-color: blue;} 
+        .box .quadrados .vermelho{background-color: red;} 
+
+        button{
+            padding: 7px 15px;
+            background-color: #656464;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Mudanco cor de fundo com JS</h1>
+    </header>
+
+    <section class="box">
+        <div class="quadrados">
+            <div id="primeiro" class="item azul"></div>
+            <div id="segundo" class="item vermelho"></div>
+        </div>
+
+        <button onclick="mudandoCorFundo()">Trocar de cor</button>
+
+    </section>
+
+    
+    
+    <script src="./mudando-cor.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando datas com Js</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Manipulação de datas com Js</h1>
+
+    <div class="criado">
+        <p>
+            Essa aula foi feita em 19/9/24.  <br>e hj é 
+            <div class="data" id="data">Data de hj </div>
+            <div class="detalhada" id="detalhada">detalhada</div>
+        </p>
+    </div>
+
+    <div class="box">
+        <p class="base">Para utilizarmos basta adicionar <span>new Date()</span>, e vc tera a data atual</p>
+
+        <p>const data = new Date(); <br> console.log(data)</p>
+    </div>
+
+    <div class="box">
+        <h3>Como podemos obter informações especificas, como dia, mês e ano?</h3>
+        <p>
+            Basta adicionar o   <br> <span>.getDate()</span> - para dia
+                                <br> <span>.getMonth() +1</span> - para mês
+            <br>                     <span>.getFullYear()</span> - para ano
+        </p>
+        <p>para o mês utilizamos o <span>+1</span> pq o js não retorna o mês em texto, ele retorna me um numerop inteiro, e como ele começa com zero, adicionamos o +1, para ter o mês atual correto.</p>
+    </div>
+
+    <div class="box">
+        <h3>Tmb podemos adicionar e subtrair dias</h3>
+        <p>para isso adicionamos o <span>.setDate</span></p>
+
+        <p>
+            cosnt dataAtual = new Date() <br>
+            dataAtual<span>.setDade</span>(dataAtual.getDate() + 7 );
+        </p>
+    </div>
+
+    <div class="box">
+        <h3>Formatando Data</h3>
+        <p>Para isso utilizamos o <span>toLocaleDateString("pt-br")</span> e entre parenteses o local. ("pt-BR")</p>
+        <p>Isso permite formatar a data de acordo com a localização</p>
+    </div>
+
+    <div class="box">
+        <h3>Formatando data com API intL.DateTimeFormat</h3>
+        <h4>É uma API propria do Js</h4>
+        <p> A API <span>IntL.DateTimeFormat</span> proporciona uma maneira mais avançada de formatar daras, levando em consideração não apenas o idioma, mas tmb outras precefencias do usuario.</p>
+
+    </div>
+
+
+
+    <script>
+        const dataAtual = new Date()
+
+        const dia = dataAtual.getDate();
+        const mes = dataAtual.getMonth() +1;
+        const ano = dataAtual.getFullYear();
+
+        console.log(dataAtual);
+
+        console.log(dia);
+        console.log(mes);
+        console.log(ano);
+
+        // dataAtual.setDate(dataAtual.getDate() +7)
+        // console.log(dataAtual);
+
+        const dataFormatada = dataAtual.toLocaleDateString("pt-BR");
+        console.log(dataFormatada);
+
+        const formato = new Intl.DateTimeFormat("pt-BR", {weekday:"long", year:"numeric", month:"long", day:"numeric"})
+        const dataFormatadaIntl = formato.format(dataAtual)
+        console.log(dataFormatadaIntl);
+
+        document.getElementById("data").innerText = `${dia}/${mes}/${ano}`;
+        document.getElementById("detalhada").innerText = `${dataFormatadaIntl}`
+
+    </script>
+</body>
+</html>

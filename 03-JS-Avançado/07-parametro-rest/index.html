@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametro Rest</title>
+    <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Parametro REST</h1>
+    <p>O parametro REST nos permite representar um número indefinido de argumentos que a gente vai passar para uma função.</p>
+    <p>Esse parametro REST vai ser interpretado como um array</p>
+
+    <script>
+        // function(a, b ...args){
+
+        // };
+
+        function incentivarQuester(mensagem, nomesQuesters){
+            console.log(`${mensagem} ${nomesQuesters}`);
+        }
+
+        incentivarQuester("Parabens por ter chegado ao modulo de JavaScript avançado, Samio")
+    </script>
+</body>
+</html>

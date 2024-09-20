@@ -1,0 +1,49 @@
+body {
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+.criado {
+    font-size: 24px;
+    text-align: center;
+    background-color: #ccc;
+    color: #000;
+    padding: 10px 4%;
+}
+
+.data {
+    font-size: 28px;
+    text-align: center;
+    background-color: #6b6a6a;
+    color: #fff;
+}
+
+.detalhada {
+    font-size: 18px;
+    text-align: center;
+    background-color: #353535;
+    color: #fff;
+}
+
+.box {
+    padding: 40px 4%;
+    background-color: #5e5d5d;
+    margin: 5px;
+}
+
+h2,h3 {
+    text-decoration: underline;
+}
+
+.base {
+    background-color: #fff;
+    color: #000;
+    
+}

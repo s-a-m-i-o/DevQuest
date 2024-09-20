@@ -1,0 +1,49 @@
+@media (max-width:1024px){
+    body {
+        background-color: darkgray;
+    }
+    .conteudo-geral {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:850px){
+
+    body {
+        background-color: rgb(61, 61, 61);
+    }
+
+    .header {
+        color: #fff;
+    }
+    .conteudo-geral {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px){
+    
+    body {
+        background-color: black;
+    }
+
+    .header {
+        color: #fff;
+    }
+
+    .conteudo-geral .primeiro,.segundo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-geral .item {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .conteudo-geral .item .explicacao {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+}

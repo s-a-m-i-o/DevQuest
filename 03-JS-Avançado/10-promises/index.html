@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+    <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+        }
+        h1,h3,p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Promises</h1>
+
+    <p>São objetos no Js que representam um valor que pode ou não estar disponivel no futuro, ou seja uma operação assincrona e seu valor resultante</p>
+
+    <p>O objeto Promise representa a eventual conclusão (ou falha) de uma operação assíncrona e seu valor resultante.</p>
+    
+    <p>As Promises tem 4 estados</p>
+    <ol>
+        <li>PENDENTE - Pending</li>
+        <li>REALIZADA - resolve</li>
+        <li>RECUSADA - Reject</li>
+        <li>ESTABELECIDA</li>
+    </ol>
+
+    <p>A Promise é uma classe no Js então é escrica com a letra inicial maiuscula</p>
+
+    <h3>PENDING</h3>
+    <p>Estado inicial - nem cumprido nem rejeitado</p>
+    <h3>FUFILLED</h3>
+    <p>Significa que a operação foi concluida com sicesso.</p>
+    <h3>REJECTED</h3>
+    <p>Significa que a operação falhou</p>
+    
+
+    <script>
+        /*
+            Pendente - estado inicial 
+            Realizada - Resolve
+            Recusada - Reject
+            Estabelecida
+        */
+
+        let ferverAgua = () => {
+            return new Promise((resolve, reject)=> {
+                if(chaleiraEstaNoFogao && fogaoEstaLigado){
+                    console.log("começando a ferver a agua");
+                    resolve()
+                }else{
+                    console.log("Coloque a chaleira no fogão e ligue");
+                    reject()
+                }
+            
+            })
+        }
+
+        let chaleiraEstaNoFogao = true
+        let fogaoEstaLigado = true
+        ferverAgua(chaleiraEstaNoFogao, fogaoEstaLigado)
+        console.log("Fazendo café");
+    </script>
+</body>
+</html>

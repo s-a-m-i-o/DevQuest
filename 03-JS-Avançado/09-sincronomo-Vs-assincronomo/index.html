@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síncrono vs Assíncrono</title>
+    <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Síncrono vs Assíncrono</h1>
+
+    <div>
+        <h2>Sincrono</h2>
+        <p>Quando falamos que um código é sincrono, estamos dizendo que esse codigo segue um fluxo linear de execução (DE CIMA PARA BAIXO)</p>
+    </div>
+    <div>
+        <h2>Asincrono</h2>
+        <p>Já o assincrono é diferente, é como se ele se descolasse do fluxo, e não vai necessariamente esperar a execução do codigo da linha anterior para que ela execute </p>
+    </div>
+    
+
+    <script>
+        function colocarAguaPraFever(){
+            console.log("Colocar agua pra ferver");
+
+            setTimeout(() => {
+                console.log("Agua ferveu");
+                passarOCafe()
+            }, 3000);
+        }
+
+        function prepararPraPassarCafe (){
+            console.log("pegar o pó de café");
+            console.log("pegar o filtro do café");
+            console.log("Colocar o café no filtro");
+            console.log("Colocar o filtro em cima da xicara");
+        }
+
+        function passarOCafe(){
+            console.log("Passar o café");
+        }
+
+        colocarAguaPraFever()
+        prepararPraPassarCafe()
+        
+    </script>
+</body>
+</html>

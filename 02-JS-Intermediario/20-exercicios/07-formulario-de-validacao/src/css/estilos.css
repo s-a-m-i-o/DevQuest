@@ -1,0 +1,87 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input {
+    border-color: black;
+}
+
+.red {
+    border-color:  red ;
+    
+}
+
+.green {
+    border-color:  green ;
+}
+
+.conteudo-geral {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conteudo-geral .esquerda .info {
+    width: 300px;
+}
+
+.conteudo-geral .esquerda .info h2 {
+    text-transform: uppercase;
+}
+
+.conteudo-geral .esquerda .info h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+}
+
+.conteudo-geral .esquerda .texto {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+}
+
+.conteudo-geral .direita{
+    background-color: #fff;
+    width: 340px;
+    height: 400px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-geral .direita .formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.conteudo-geral .direita .formulario input {
+    margin-bottom:15px;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.conteudo-geral .direita .formulario textarea {
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.conteudo-geral .direita .button {
+    width: 300px;
+    height: 42px;
+    background-color: #3CCC87;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;}
