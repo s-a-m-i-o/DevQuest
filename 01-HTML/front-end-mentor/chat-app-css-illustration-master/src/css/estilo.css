@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(270, 20%, 96%);
+    /* overflow: hidden; */
+}
+
+.roxo {
+    width: 930px;
+    height: 600px;
+    background: linear-gradient(to bottom, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: relative;
+    right: 90px;
+}
+
+.roxo-direito {
+    width: 930px;
+    height: 600px;
+    background: linear-gradient(to bottom, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    position: relative;
+    left:300px;
+    top: 150px;
+    opacity: 0.1;
+}
+
+.obs {
+    height: 250px;
+    text-align: justify;
+}
+
+.celular {
+    height: 900px;
+    background-color: red;
+}
