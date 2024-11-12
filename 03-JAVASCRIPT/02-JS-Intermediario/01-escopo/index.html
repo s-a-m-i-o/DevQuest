@@ -7,18 +7,43 @@
 </head>
 <body>
 
-    <h1>Escopo</h1>
+    <h1>Escopo no JavaScript</h1>
+    
+    <p>Na programação, o escopo refere-se à visibilidade e acessibilidade de variáveis, funções e objetos durante o tempo de execução. Simplificando, o escopo diz se você pode usar variáveis, funções ou objetos específicos no seu código em um local específico ou não.</p>
 
+    <div class="gpt">
+        <h2>Explicação do ChatGPT</h2>
+        <p>Escopo no JavaScript é o "limite" onde as variáveis e funções podem ser acessadas. Pense no escopo como o "ambiente" onde uma variável "vive" e está disponível para uso. Existem dois tipos principais de escopo:</p>
+        <ul>
+            <li>
+                <strong>Escopo Global:</strong>Variáveis declaradas fora de qualquer função. Elas ficam disponíveis em qualquer parte do código.
+            </li>
+            <li>
+                <strong>Escopo Local (ou de Função):</strong>Variáveis declaradas dentro de uma função. Elas só podem ser acessadas dentro dessa função.
+            </li>
+        </ul>
 
+        <p>Além disso, há o escopo de bloco, criado quando usamos { } com let e const (em if, for, etc.). Variáveis dentro desses blocos só podem ser acessadas ali.</p>
+
+        <div class="resumo">
+            <ul>
+                <li>Global: acessível de qualquer lugar</li>
+                <li>Local/Função: acessível só dentro da função.</li>
+                <li>Bloco: acessível apenas no bloco { }.</li>
+            </ul>
+
+            <p>Esses "limites" ajudam a controlar onde suas variáveis podem ser vistas e usadas, evitando erros e conflitos de nomes.</p>
+        </div>
+    </div>
     
     <script>
 
         const mensagem = "Olá mundo";
         console.log(mensagem);
 
-        let nome=prompt("Qual seu nome? ")
+        let nome = prompt("Qual seu nome? ")
         
-        console.log("Olá ", +nome)
+        console.log(`Olá ${nome}`)
 
     </script>
 </body>

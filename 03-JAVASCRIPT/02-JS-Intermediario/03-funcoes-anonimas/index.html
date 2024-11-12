@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções anonimas</title>
+</head>
+
+<body>
+    <h1>Funções anonimas</h1>
+    <p>Uma função anônima é uma função sem nome. <br>Elas são úteis quando você quer criar uma função rapidamente,
+        muitas vezes para ser usada apenas uma vez, ou para passar como argumento para outra função.</p>
+
+    <div class="como-funciona">
+        <h2>Como funciona uma funçã anonima?</h2>
+        <p>Em vez de dar um nome para a função, você define a lógica diretamente. <br> No JavaScript, você pode criar
+            uma função anônima de várias formas, mas a mais comum é atribuí-la a uma variável ou usá-la como argumento.
+        </p>
+    </div>
+
+    <div class="variavel">
+        <h3>Exemplo de funçã anonima atribuida a uma váriavel</h3>
+        <img src="./variavel.jpg" alt="Função Atribuida a uma variavel">
+
+        <p>Aqui, <span>saudacao</span>, é uma variavel que "guarda" uam função anonima, e vc pode chama-la pelo nome da
+            variavel</p>
+    </div>
+
+    <div class="para-q-serve">
+        <h2>Para que serve uma funçã anonima?</h2>
+        <h3>Funções anonimas são muito usadas quando:</h3>
+
+        <ol>
+            <li>
+                <strong>Passadas como argumentos para outras funções</strong>: Em callbacks (funções executadas apos um evento), as funções anonimas são bastante uteis. <br>
+                Por exemplo:
+                <img src="ex01.jpg" alt="Função que será executada apos tres segundos|">
+                <p>Nesse caso, a função anonima é passada como argumento para <span>setTimeout</span>, e só será executada apos 3  segundos</p>
+            </li>
+            <li>
+                <strong>Em funções de alta ordem (função que recebem outras funções como parametro)</strong>: Ao trabalhar com metodos como <span>map, filter e forEach</span> as funções anonimas são comuns. <br>
+                Exemplo:
+                <img src="./ex02.jpg" alt="Função de alta ordem">
+            </li>
+            <li>
+                <strong>Para evitar poluir o escopo global</strong>: funções anonimas ajudam a evitar criar variavels e funções no escopo global, o que ajuda a manter o codigo mais organizado e a evitar conflintos.
+            </li>
+        </ol>
+    </div>
+
+    <div class="ec6">
+        <h2>Exemplo de uso com Arrow Function</h2>
+        <p>No ES6, podemso usar uma sintaxe mais curta, chamada de <span>arrow function</span>, para criar funções anonimas:
+            <img src="./arrow.jpg" alt="Arrow Function">
+        </p>
+    </div>
+
+    <div class="resumo">
+        <ul>
+            <li><strong>Funções anonimas</strong> são funções sem nome.</li>
+            <li>São usadas para logica rapida, especialmente como argumentos para outras fuinções (callbacks).</li>
+            <li>Tornam o codigo mais organizado e ajudam a evitar o excesso de variaveos no escopo global</li>
+        </ul>
+    </div>
+</body>
+
+</html>
